@@ -3,7 +3,7 @@
 An **offline, local-only Android application** for discovering trails, logging hikes, tracking wildlife sightings, and viewing personal hiking statistics — built with **Material Design components** and **SQLite**.
 
 <p align="center">
-  <img src="assets/signup.png" alt="HikeLog Architecture" width="700" />
+  <img src="assets/signup.png" alt="HikeLog Architecture" width="260" />
 </p>
 
 ---
