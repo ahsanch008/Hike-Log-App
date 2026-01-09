@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:text="Welcome back,"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6B7C75" />
+
+        <TextView
+            android:id="@+id/home_greeting_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textColor="#183A2A" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_round"
+                android:padding="12dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <LinearLayout android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_circle_soft" android:gravity="center">
+                        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_steps" app:tint="#2D8E6B" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:id="@+id/stat_total_hikes_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textStyle="bold" android:textSize="18sp" android:textColor="#183A2A" android:layout_marginTop="6dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Hikes" android:textColor="#6B7C75" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="8dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_round"
+                android:padding="12dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <LinearLayout android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_circle_soft" android:gravity="center">
+                        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_timer" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:id="@+id/stat_total_time_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0m" android:textStyle="bold" android:textSize="18sp" android:textColor="#183A2A" android:layout_marginTop="6dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Time" android:textColor="#6B7C75" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_round"
+                android:padding="12dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <LinearLayout android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_circle_soft" android:gravity="center">
+                        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_trend" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:id="@+id/stat_this_week_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textStyle="bold" android:textSize="18sp" android:textColor="#183A2A" android:layout_marginTop="6dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This Week" android:textColor="#6B7C75" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hikes completed" android:textColor="#9AA7A1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="8dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_round"
+                android:padding="12dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <LinearLayout android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_circle_soft" android:gravity="center">
+                        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_calendar" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:id="@+id/stat_last_hike_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textStyle="bold" android:textSize="18sp" android:textColor="#183A2A" android:layout_marginTop="6dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Last Hike" android:textColor="#6B7C75" />
+                <TextView android:id="@+id/stat_last_hike_sub_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No hikes yet" android:textColor="#9AA7A1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+            <TextView android:text="Explore Trails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textColor="#183A2A" android:textSize="18sp" />
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+            <TextView android:id="@+id/link_see_all" android:text="See all  ›" android:textColor="#2D8E6B" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_trails_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </LinearLayout>
+
+</ScrollView>

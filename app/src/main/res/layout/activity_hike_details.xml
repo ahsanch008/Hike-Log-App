@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/hike_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/hike_detail_meta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/hike_detail_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elevation Profile"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/elevation_chart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_add_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Elevation Point"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wildlife Sightings"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wildlife_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/wildlife_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No wildlife sightings recorded"
+        android:textColor="#6B7C75"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_add_wildlife"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Wildlife Sighting"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_delete_hike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
+

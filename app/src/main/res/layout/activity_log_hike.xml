@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/input_trail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Trail name" />
+
+        <Spinner
+            android:id="@+id/input_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/difficulty_entries"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_pick_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick date"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/input_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration (min)"
+            android:inputType="number"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/input_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes (optional)"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
+

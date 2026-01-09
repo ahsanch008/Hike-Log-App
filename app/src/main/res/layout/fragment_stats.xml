@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView android:text="Statistics" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="20sp" android:textColor="#183A2A" />
+        <TextView android:text="Your hiking journey at a glance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#6B7C75" android:layout_marginTop="4dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp">
+            <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:cardUseCompatPadding="true" app:cardElevation="2dp" app:cardCornerRadius="16dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_steps" app:tint="#2D8E6B" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Hikes" android:textColor="#6B7C75" android:layout_marginLeft="6dp" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/stat_total_hikes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textStyle="bold" android:textSize="22sp" android:textColor="#183A2A" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout android:layout_width="8dp" android:layout_height="match_parent" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:cardUseCompatPadding="true" app:cardElevation="2dp" app:cardCornerRadius="16dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_timer" app:tint="#F5B66E" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Duration" android:textColor="#6B7C75" android:layout_marginLeft="6dp" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/stat_total_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0m" android:textStyle="bold" android:textSize="22sp" android:textColor="#183A2A" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+            <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:cardUseCompatPadding="true" app:cardElevation="2dp" app:cardCornerRadius="16dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_trend" app:tint="#F5B66E" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Average Duration" android:textColor="#6B7C75" android:layout_marginLeft="6dp" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/stat_avg_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0m" android:textStyle="bold" android:textSize="22sp" android:textColor="#183A2A" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout android:layout_width="8dp" android:layout_height="match_parent" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:cardUseCompatPadding="true" app:cardElevation="2dp" app:cardCornerRadius="16dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_trophy" app:tint="#2D8E6B" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Longest Hike" android:textColor="#6B7C75" android:layout_marginLeft="6dp" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/stat_longest_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0m" android:textStyle="bold" android:textSize="22sp" android:textColor="#183A2A" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:cardUseCompatPadding="true" app:cardElevation="2dp" app:cardCornerRadius="18dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:text="Activity Summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textColor="#183A2A" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="8dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="8dp" android:paddingBottom="8dp">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_leaf" app:tint="#2D8E6B" />
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginLeft="8dp">
+                            <TextView android:text="This Week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#183A2A" />
+                            <TextView android:text="Last 7 days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#6B7C75" />
+                        </LinearLayout>
+                        <TextView android:id="@+id/stat_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textStyle="bold" android:textColor="#183A2A" />
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E5EEEA" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="8dp" android:paddingBottom="8dp">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_calendar" app:tint="#F5B66E" />
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginLeft="8dp">
+                            <TextView android:text="This Month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#183A2A" />
+                            <TextView android:text="Last 30 days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#6B7C75" />
+                        </LinearLayout>
+                        <TextView android:id="@+id/stat_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textStyle="bold" android:textColor="#183A2A" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:cardUseCompatPadding="true" app:cardElevation="2dp" app:cardCornerRadius="18dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:text="Hikes by Difficulty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textColor="#183A2A" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="12dp">
+                    <TextView android:id="@+id/stat_easy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#183A2A" android:background="@drawable/bg_chip_light" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="6dp" android:paddingBottom="6dp" />
+                    <TextView android:id="@+id/stat_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#183A2A" android:background="@drawable/bg_chip_light" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_marginLeft="8dp" />
+                    <TextView android:id="@+id/stat_hard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#183A2A" android:background="@drawable/bg_chip_light" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_marginLeft="8dp" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:layout_marginTop="8dp">
+                    <LinearLayout android:layout_width="72dp" android:layout_height="72dp" android:background="@drawable/bg_circle_soft" android:gravity="center">
+                        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_tree" app:tint="#183A2A" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Complete hikes to see your breakdown" android:textColor="#6B7C75" android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

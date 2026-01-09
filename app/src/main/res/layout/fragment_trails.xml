@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F7F4"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/trails_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore Trails"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#183A2A" />
+
+    <TextView
+        android:id="@+id/trails_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 trails available"
+        android:textColor="#6B7C75"
+        android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Search trails or locations..."
+            android:background="@drawable/bg_input_round"
+            android:paddingLeft="16dp" />
+        <ImageButton
+            android:id="@+id/btn_filter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_input_round"
+            android:src="@drawable/ic_filter"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+    
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trails_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
